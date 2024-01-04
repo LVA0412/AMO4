@@ -7,7 +7,7 @@ from catboost.datasets import titanic
 train_df, _ = titanic()
 titanic_dataset = train_df.copy()
 
-# Заполним пропущенные значения в поле "Age" средним значением
+#Заполним пропущенные значения в поле "Age" средним значением
 titanic_dataset['Age'].fillna(titanic_dataset['Age'].mean(), inplace=True)
 
 # Создадим новый признак для поля "Sex" с использованием one-hot-encoding 
